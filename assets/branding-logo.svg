@@ -1,0 +1,42 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kindness Cars branding mark</title>
+  <desc id="desc">Two-tone heart icon with children sharing a small toy car and Kindness Cars wordmark.</desc>
+  <defs>
+    <style>
+      .navy { fill: #333B6B; }
+      .orange { fill: #F88612; }
+      .none { fill: none; }
+      .stroke-orange { stroke: #F88612; }
+      .stroke-navy { stroke: #333B6B; }
+      .stroke-white { stroke: #ffffff; }
+    </style>
+  </defs>
+
+  <!-- Heart outline -->
+  <path d="M360 292C318 251 230 212 230 138C230 81 275 40 332 40C378 40 408 65 430 95C452 65 482 40 528 40C585 40 630 81 630 138C630 212 542 251 500 292C456 335 404 382 360 430C316 382 264 335 220 292Z"
+        class="none stroke-orange" stroke-width="20" stroke-linecap="round"/>
+  <path d="M430 95C452 65 482 40 528 40C585 40 630 81 630 138C630 212 542 251 500 292C456 335 404 382 360 430"
+        class="none stroke-navy" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- Simplified child silhouettes -->
+  <circle cx="332" cy="172" r="52" class="orange"/>
+  <path d="M280 246C292 214 314 206 332 206C352 206 372 216 386 246C376 276 352 304 332 304C306 304 286 279 280 246Z" class="orange"/>
+
+  <circle cx="490" cy="172" r="52" class="navy"/>
+  <path d="M438 248C450 216 472 206 490 206C510 206 530 216 544 248C534 278 510 304 490 304C464 304 444 280 438 248Z" class="navy"/>
+  <ellipse cx="548" cy="208" rx="22" ry="34" class="navy"/>
+
+  <!-- Shared toy car -->
+  <rect x="392" y="228" width="54" height="20" rx="5" class="white" fill="#ffffff"/>
+  <path d="M404 228L415 216H431L439 228" class="none stroke-navy" stroke-width="4"/>
+  <rect x="392" y="228" width="54" height="20" rx="5" class="none stroke-navy" stroke-width="4"/>
+  <circle cx="404" cy="250" r="8" class="none stroke-navy" stroke-width="4"/>
+  <circle cx="434" cy="250" r="8" class="none stroke-navy" stroke-width="4"/>
+
+  <!-- Hands -->
+  <path d="M362 250C377 248 386 242 392 238" class="none stroke-orange" stroke-width="10" stroke-linecap="round"/>
+  <path d="M468 250C456 247 448 242 446 238" class="none stroke-navy" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Wordmark -->
+  <text x="360" y="502" text-anchor="middle" font-size="76" font-weight="600" font-family="'Nunito Sans', 'Avenir Next', 'Trebuchet MS', sans-serif" fill="#333B6B">Kindness Cars</text>
+</svg>
