@@ -69,6 +69,26 @@ body {
   font-weight: 700;
 }
 
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+  margin-top: 20px;
+}
+
+.section-nav a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(51, 59, 107, 0.08);
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  background: rgba(51, 59, 107, 0.16);
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -94,6 +114,11 @@ h2 {
   font-size: clamp(1.4rem, 3.2vw, 2rem);
   color: var(--ink);
   letter-spacing: 0.01em;
+}
+
+h3 {
+  margin: 0 0 6px;
+  color: var(--ink);
 }
 
 p {
@@ -163,6 +188,31 @@ a {
 .hero-cta:focus-visible {
   background: #45508f;
   box-shadow: 0 7px 0 #20294f;
+}
+
+.contact-list p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.blog-card {
+  border: 2px solid #d8def1;
+  border-radius: var(--radius-medium);
+  padding: 16px;
+  background: #fcfdff;
+}
+
+.blog-label {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--orange-deep);
 }
 
 footer {
