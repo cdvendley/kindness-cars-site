@@ -1,40 +1,220 @@
+:root {
+  --bg: #fff7ee;
+  --bg-soft: #fff2dc;
+  --surface: #ffffff;
+  --text: #1f2d3d;
+  --teal: #0f7c84;
+  --teal-deep: #0a5f66;
+  --sun: #ffcc4d;
+  --coral: #ff7f66;
+  --sky: #7ec8ff;
+  --shadow: 0 10px 26px rgba(15, 50, 68, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background: #f9f7f2;
-  color: #222;
-  line-height: 1.6;
+  color: var(--text);
+  line-height: 1.65;
+  background:
+    radial-gradient(circle at 10% 8%, rgba(255, 204, 77, 0.25), transparent 18%),
+    radial-gradient(circle at 90% 12%, rgba(126, 200, 255, 0.24), transparent 20%),
+    linear-gradient(180deg, var(--bg) 0%, #fffdfa 40%, var(--bg-soft) 100%);
 }
 
-header {
-  background: #1f4f46;
-  color: white;
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(130deg, #19a7a8 0%, #0f7c84 55%, #0a5f66 100%);
+  color: #fff;
   text-align: center;
-  padding: 60px 20px;
+  padding: 68px 20px 72px;
+  border-bottom: 6px solid var(--sun);
 }
 
-main {
-  max-width: 800px;
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.35;
+}
+
+.hero::before {
+  width: 220px;
+  height: 220px;
+  background: var(--sun);
+  top: -90px;
+  left: -70px;
+}
+
+.hero::after {
+  width: 260px;
+  height: 260px;
+  background: #7cd8ff;
+  bottom: -140px;
+  right: -90px;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
   margin: 0 auto;
-  padding: 40px 20px;
 }
 
-section {
-  margin-bottom: 40px;
+.hero-kicker {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
-h1, h2 {
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.hero-tagline {
+  margin: 14px auto 0;
+  max-width: 42ch;
+  font-size: clamp(1.03rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+}
+
+.content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 36px 20px 52px;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 22px;
+  background: var(--surface);
+  border-radius: 22px;
+  padding: 24px 22px;
+  border: 2px solid rgba(15, 124, 132, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  bottom: 16px;
+  width: 8px;
+  border-radius: 16px;
+}
+
+.card-story::before {
+  background: var(--sun);
+}
+
+.card-mission::before {
+  background: var(--sky);
+}
+
+.card-help::before {
+  background: var(--coral);
+}
+
+h2 {
   margin-top: 0;
+  margin-bottom: 10px;
+  color: #114f55;
+  font-size: clamp(1.45rem, 3vw, 1.8rem);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
 }
 
 a {
-  color: #1f4f46;
-  font-weight: bold;
   text-decoration: none;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: var(--teal);
+  border: 2px solid var(--teal);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: 0 6px 14px rgba(15, 124, 132, 0.25);
+  transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background: var(--teal-deep);
+  border-color: var(--teal-deep);
+  box-shadow: 0 8px 16px rgba(10, 95, 102, 0.28);
+  transform: translateY(-1px);
+}
+
+.cta-button:focus-visible {
+  outline: 3px solid rgba(255, 204, 77, 0.8);
+  outline-offset: 2px;
+}
+
+.cta-button-secondary {
+  background: #fff;
+  color: var(--teal);
+}
+
+.cta-button-secondary:hover,
+.cta-button-secondary:focus {
+  background: #eaf9fa;
+  color: var(--teal-deep);
 }
 
 footer {
   text-align: center;
-  padding: 30px 20px;
-  background: #eee7dc;
+  padding: 24px 20px 30px;
+  color: #3b4f60;
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
+  .card {
+    border-radius: 18px;
+    padding: 20px 18px;
+  }
+
+  .cta-group {
+    width: 100%;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
 }
