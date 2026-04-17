@@ -7,13 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Kindness Cars</h1>
-    <p>Small toy cars. Big moments of kindness.</p>
+  <header class="site-header">
+    <div class="hero-decor" aria-hidden="true">
+      <span class="blob blob-blue"></span>
+      <span class="blob blob-yellow"></span>
+      <span class="blob blob-coral"></span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">A family-powered kindness project</p>
+      <h1>Kindness Cars</h1>
+      <p class="hero-subtitle">Small toy cars. Big moments of kindness.</p>
+      <a class="cta-button hero-cta" href="#help">Help Us Share Joy</a>
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="story-card">
       <h2>Fisher’s Story</h2>
       <p>
         Kindness Cars began with Fisher, a young boy who loves Hot Wheels and Matchbox cars.
@@ -22,7 +31,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="story-card story-card-accent">
       <h2>Our Mission</h2>
       <p>
         Our mission is to bring comfort, distraction, and joy to children during hospital visits
@@ -30,7 +39,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="story-card" id="help">
       <h2>How to Help</h2>
       <p>
         You can support Kindness Cars by donating new toy cars, helping fund purchases, or spreading the word in your community.
