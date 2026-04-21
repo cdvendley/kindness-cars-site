@@ -10,29 +10,74 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header site-header-simple">
-    <div class="brand-lockup">
-      <img class="brand-logo" src="assets/kindness-cars-logo.png" alt="Kindness Cars Project logo">
-      <h1 class="site-title">Kindness Cars Project</h1>
+  <header class="site-header">
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Family-led kindness initiative</p>
+        <img class="brand-logo" src="assets/kindness-cars-logo.png" alt="Kindness Cars Project logo">
+        <h1 class="hero-title">Small gifts. Big moments of comfort.</h1>
+        <p class="hero-subtitle">
+          The Kindness Cars Project helps turn hospital waiting room moments into small acts of connection, comfort, and joy.
+        </p>
+        <p class="hero-supporting-copy">
+          Started by Fisher and supported by family, friends, and a growing community, this project is built to encourage simple, thoughtful giving in places where it can matter most.
+        </p>
+        <div class="cta-group hero-actions">
+          <a class="cta-button" href="#how-it-started">See how it works</a>
+          <a class="cta-button cta-button-secondary" href="#support">How to support</a>
+        </div>
+      </div>
+      <div class="hero-photo-card" aria-label="Featured project photo placeholder">
+        <div class="photo-placeholder photo-placeholder-large">
+          <span>Featured photo placeholder</span>
+          <small>Add a warm, candid project image here</small>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="story-card" id="how-it-started">
-      <h2>How it started</h2>
-      <p>
-        Fisher visits Seattle Children’s Hospital more than most kids. Since his very first appointment, he has always brought along a collection of toy cars to play with.
-      </p>
-      <p>
-        Over time, he started sharing those cars with other kids he met and even giving away a few from his own collection. Eventually, he came up with a new idea: bring brand-new cars to hand out in the waiting room.
-      </p>
-      <p>
-        What began as one child’s instinct to share has grown into the Kindness Cars Project.
-      </p>
+    <section class="impact-strip" aria-label="Project highlights">
+      <article class="impact-item">
+        <p class="impact-number">20+</p>
+        <p class="impact-label">Cars shared on Fisher’s last visit</p>
+      </article>
+      <article class="impact-item">
+        <p class="impact-number">Family-led</p>
+        <p class="impact-label">Started with help from friends and family</p>
+      </article>
+      <article class="impact-item">
+        <p class="impact-number">Simple to copy</p>
+        <p class="impact-label">Built to inspire other families to give too</p>
+      </article>
+    </section>
+
+    <section class="split-section" id="how-it-started">
+      <div class="story-card story-card-feature">
+        <p class="section-kicker">Our story</p>
+        <h2>How it started</h2>
+        <p>
+          Fisher visits Seattle Children’s Hospital more than most kids. Since his very first appointment, he has always brought along a collection of toy cars to play with.
+        </p>
+        <p>
+          Over time, he started sharing those cars with other kids he met and even giving away a few from his own collection. Eventually, he came up with a new idea: bring brand-new cars to hand out in the waiting room.
+        </p>
+        <p>
+          What began as one child’s instinct to share has grown into the Kindness Cars Project.
+        </p>
+      </div>
+      <aside class="support-card">
+        <p class="section-kicker">Why it matters</p>
+        <h3>Placeholder mission note</h3>
+        <p>
+          Waiting rooms can feel unfamiliar, long, and stressful. A small gift cannot change everything, but it can change a moment. That moment matters.
+        </p>
+      </aside>
     </section>
 
     <section class="story-card story-card-accent" id="what-we-do">
-      <h2>What we do</h2>
+      <p class="section-kicker">What we do</p>
+      <h2>Growing one small act of kindness at a time</h2>
       <p>
         We are still in the early days. Friends and family have been donating new toy cars, and Fisher has been handing them out during his hospital visits. On his last visit alone, he gave away more than 20 cars.
       </p>
@@ -44,8 +89,24 @@
       </p>
     </section>
 
+    <section class="photo-band" aria-label="Project photo placeholders">
+      <div class="photo-placeholder">
+        <span>Photo placeholder</span>
+        <small>Hands holding toy cars</small>
+      </div>
+      <div class="photo-placeholder">
+        <span>Photo placeholder</span>
+        <small>Neat row of gift cars</small>
+      </div>
+      <div class="photo-placeholder">
+        <span>Photo placeholder</span>
+        <small>Candid project moment</small>
+      </div>
+    </section>
+
     <section class="story-card" id="get-involved">
-      <h2>Start your own gifting practice</h2>
+      <p class="section-kicker">Start your own gifting practice</p>
+      <h2>Simple, thoughtful, and easy to begin</h2>
       <p>
         It is easy to get started. Think of something small and broadly loved by kids. Fisher is a car nut, so he chooses toy cars, but crayons, little animal figures, trinkets, or something else you would genuinely enjoy sharing can work too.
       </p>
@@ -58,41 +119,47 @@
       <p>
         We do not worry too much about whether a child is young or old, the patient or a sibling. Some of the biggest reactions come from the biggest kids. The key is to keep the interaction short, simple, and kind.
       </p>
-      <div class="cta-group">
-        <a class="cta-button" href="#contact">Support the project</a>
-        <a class="cta-button cta-button-secondary" href="#blog">Read visit stories</a>
-      </div>
     </section>
 
-    <section class="story-card story-card-accent" id="contact">
-      <h2>How to support</h2>
-      <p>
-        We are building this one small act of kindness at a time. More details on donations, ways to help, and future updates will be added soon.
-      </p>
-    </section>
-
-    <section class="story-card" id="blog">
-      <h2>Blog</h2>
-      <p>
-        We will share visit recaps, gifting highlights, and lessons we are learning as the project grows.
-      </p>
-      <div class="blog-grid" aria-label="Recent blog highlights">
-        <article class="blog-card">
-          <p class="blog-label">Coming soon</p>
-          <h3>April hospital visit recap</h3>
-          <p>Highlights from our latest day of sharing toy cars in waiting rooms.</p>
-        </article>
-        <article class="blog-card">
-          <p class="blog-label">Coming soon</p>
-          <h3>Starter gifting checklist</h3>
-          <p>A simple guide for families who want to begin their own gifting practice.</p>
-        </article>
-      </div>
+    <section class="support-grid" id="support">
+      <article class="story-card support-panel">
+        <p class="section-kicker">How to support</p>
+        <h2>Ways families and friends can help</h2>
+        <ul class="support-list">
+          <li>Donate brand-new toy cars or other small gifts</li>
+          <li>Share the project with friends and family</li>
+          <li>Start a gifting practice of your own</li>
+        </ul>
+        <p class="support-note">Placeholder: add real donation details, mailing info, or future calls to action here.</p>
+      </article>
+      <article class="story-card support-panel support-panel-muted">
+        <p class="section-kicker">Project updates</p>
+        <h2>Stories from the project</h2>
+        <p>
+          We will share visit recaps, gifting highlights, photo moments, and lessons we are learning as the project grows.
+        </p>
+        <div class="blog-grid" aria-label="Recent project stories">
+          <article class="blog-card">
+            <p class="blog-label">Coming soon</p>
+            <h3>Visit recap</h3>
+            <p>Placeholder for a short update from a recent visit.</p>
+          </article>
+          <article class="blog-card">
+            <p class="blog-label">Coming soon</p>
+            <h3>Getting started guide</h3>
+            <p>Placeholder for a simple family-friendly how-to post.</p>
+          </article>
+        </div>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Kindness Cars Project</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-title">Kindness Cars Project</p>
+      <p class="footer-copy">A family-led kindness initiative built to encourage small acts of generosity in clinical spaces.</p>
+      <p class="footer-meta">More updates, support details, and project stories coming soon.</p>
+    </div>
   </footer>
 </body>
 </html>
