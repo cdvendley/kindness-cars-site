@@ -45,7 +45,8 @@ img {
   padding: 44px 20px 30px;
 }
 
-.hero-shell {
+.hero-shell,
+.flyer-shell {
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
@@ -369,6 +370,7 @@ a {
 
 @media (max-width: 900px) {
   .hero-shell,
+  .flyer-shell,
   .split-section,
   .support-grid,
   .impact-strip,
@@ -393,6 +395,7 @@ a {
   }
 
   .hero-shell,
+  .flyer-shell,
   .story-card,
   .support-card,
   .footer-inner,
