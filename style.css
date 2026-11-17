@@ -78,31 +78,11 @@ img {
   text-transform: uppercase;
 }
 
-.brand-logo-lockup {
-  position: relative;
-  container-type: inline-size;
+.brand-logo {
   width: min(100%, 460px);
+  display: block;
   margin: 0 0 10px;
   filter: drop-shadow(0 10px 18px rgba(36, 49, 91, 0.12));
-}
-
-.brand-logo {
-  display: block;
-  width: 100%;
-}
-
-.brand-logo-project {
-  position: absolute;
-  top: 74.5%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #353e6d;
-  font-size: 2rem;
-  font-size: 6.8cqw;
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
 }
 
 .hero-title {
@@ -565,13 +545,8 @@ a {
     gap: 14px;
   }
 
-  .brand-logo-lockup {
+  .brand-logo {
     width: min(100%, 330px);
-  }
-
-  .brand-logo-project {
-    font-size: 1.4rem;
-    font-size: 6.8cqw;
   }
 
   .hero-title {
