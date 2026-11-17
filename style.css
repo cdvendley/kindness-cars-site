@@ -153,6 +153,65 @@ main {
   padding: 18px 20px 64px;
 }
 
+.gift-counter {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.48fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 46px);
+  align-items: center;
+  margin: 0 0 24px;
+  padding: clamp(24px, 4vw, 40px);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ink) 0%, #35477c 100%);
+  border: 1px solid rgba(36, 49, 91, 0.16);
+  border-radius: var(--radius-large);
+  box-shadow: var(--shadow-soft);
+}
+
+.gift-counter-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+  padding: 24px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-medium);
+}
+
+.gift-counter-number {
+  color: var(--white);
+  font-size: clamp(4rem, 9vw, 6.8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.gift-counter-label {
+  margin-top: 14px;
+  color: #fff3e5;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gift-counter-copy .section-kicker {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff3e5;
+}
+
+.gift-counter-copy h2,
+.gift-counter-copy p {
+  color: var(--white);
+}
+
+.gift-counter-copy p:last-child {
+  max-width: 52ch;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1.05rem;
+}
+
 .impact-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -328,7 +387,58 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--orange-deep);
+  color: var(--ink-soft);
+}
+
+.gift-journal {
+  margin: 24px 0;
+}
+
+.gift-journal-intro {
+  max-width: 66ch;
+}
+
+.gift-entry {
+  margin-top: 24px;
+  padding: clamp(20px, 3vw, 28px);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(36, 49, 91, 0.12);
+  border-left: 5px solid var(--orange);
+  border-radius: var(--radius-medium);
+}
+
+.gift-entry-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.gift-entry-heading h3 {
+  margin-bottom: 0;
+  font-size: clamp(1.3rem, 2.1vw, 1.65rem);
+}
+
+.gift-entry-count {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 9px 14px;
+  color: var(--ink);
+  font-weight: 800;
+  background: var(--orange-soft);
+  border: 1px solid rgba(245, 138, 31, 0.24);
+  border-radius: 999px;
+}
+
+.gift-entry-count strong {
+  color: var(--ink);
+}
+
+.gift-entry-story {
+  max-width: 76ch;
 }
 
 .site-footer {
@@ -374,8 +484,13 @@ a {
   .split-section,
   .support-grid,
   .impact-strip,
-  .photo-band {
+  .photo-band,
+  .gift-counter {
     grid-template-columns: 1fr;
+  }
+
+  .gift-counter-total {
+    min-height: 0;
   }
 
   .photo-placeholder-large {
@@ -399,8 +514,19 @@ a {
   .story-card,
   .support-card,
   .footer-inner,
-  .impact-item {
+  .impact-item,
+  .gift-counter {
     border-radius: var(--radius-medium);
+  }
+
+  .gift-counter {
+    gap: 22px;
+    padding: 20px;
+  }
+
+  .gift-entry-heading {
+    flex-direction: column;
+    gap: 14px;
   }
 
   .brand-logo {
